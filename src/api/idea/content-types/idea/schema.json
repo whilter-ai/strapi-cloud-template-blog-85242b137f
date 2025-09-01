@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ideas",
+  "info": {
+    "singularName": "idea",
+    "pluralName": "ideas",
+    "displayName": "idea"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "concept": {
+      "type": "text"
+    },
+    "format": {
+      "type": "text"
+    },
+    "personalisation": {
+      "type": "text"
+    },
+    "emotional_hook": {
+      "type": "text"
+    },
+    "selected": {
+      "type": "boolean"
+    },
+    "pitch_id": {
+      "type": "integer"
+    },
+    "slides": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::slide.slide",
+      "mappedBy": "idea"
+    }
+  }
+}

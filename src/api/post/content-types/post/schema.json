@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "integer"
+    },
+    "caption": {
+      "type": "text"
+    },
+    "slide": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::slide.slide",
+      "inversedBy": "posts"
+    }
+  }
+}

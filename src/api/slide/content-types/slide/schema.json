@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "slides",
+  "info": {
+    "singularName": "slide",
+    "pluralName": "slides",
+    "displayName": "slide"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "integer"
+    },
+    "idea": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::idea.idea",
+      "inversedBy": "slides"
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::post.post",
+      "mappedBy": "slide"
+    }
+  }
+}
