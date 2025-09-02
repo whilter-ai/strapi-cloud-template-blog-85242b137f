@@ -384,21 +384,21 @@ export interface ApiIdeaIdea extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
+    comment: Schema.Attribute.Text;
     concept: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    emotional_hook: Schema.Attribute.Text;
-    format: Schema.Attribute.Text;
+    execution: Schema.Attribute.Text;
+    idea_title: Schema.Attribute.String;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::idea.idea'> &
       Schema.Attribute.Private;
-    personalisation: Schema.Attribute.Text;
+    personalisation_logic: Schema.Attribute.Text;
     pitch_id: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     selected: Schema.Attribute.Boolean;
     slides: Schema.Attribute.Relation<'oneToMany', 'api::slide.slide'>;
-    title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

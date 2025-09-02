@@ -11,19 +11,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
+    "idea_title": {
       "type": "string"
     },
     "concept": {
       "type": "text"
     },
-    "format": {
+    "comment": {
       "type": "text"
     },
-    "personalisation": {
+    "personalisation_logic": {
       "type": "text"
     },
-    "emotional_hook": {
+    "execution": {
       "type": "text"
     },
     "selected": {
