@@ -17,13 +17,7 @@
     "concept": {
       "type": "text"
     },
-    "comment": {
-      "type": "text"
-    },
     "personalisation_logic": {
-      "type": "text"
-    },
-    "execution": {
       "type": "text"
     },
     "selected": {
