@@ -396,6 +396,7 @@ export interface ApiIdeaIdea extends Struct.CollectionTypeSchema {
     pitch_id: Schema.Attribute.Integer;
     publishedAt: Schema.Attribute.DateTime;
     selected: Schema.Attribute.Boolean;
+    sequence: Schema.Attribute.Integer;
     slides: Schema.Attribute.Relation<'oneToMany', 'api::slide.slide'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
