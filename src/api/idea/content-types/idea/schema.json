@@ -23,9 +23,6 @@
     "selected": {
       "type": "boolean"
     },
-    "pitch_id": {
-      "type": "integer"
-    },
     "slides": {
       "type": "relation",
       "relation": "oneToMany",
@@ -34,6 +31,9 @@
     },
     "sequence": {
       "type": "integer"
+    },
+    "pitch_id": {
+      "type": "uid"
     }
   }
 }

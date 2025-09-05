@@ -454,7 +454,7 @@ export interface ApiIdeaIdea extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::idea.idea'> &
       Schema.Attribute.Private;
     personalisation_logic: Schema.Attribute.Text;
-    pitch_id: Schema.Attribute.Integer;
+    pitch_id: Schema.Attribute.UID;
     publishedAt: Schema.Attribute.DateTime;
     selected: Schema.Attribute.Boolean;
     sequence: Schema.Attribute.Integer;
