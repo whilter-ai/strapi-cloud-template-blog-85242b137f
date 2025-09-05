@@ -34,6 +34,9 @@
     },
     "pitch_id": {
       "type": "uid"
+    },
+    "format": {
+      "type": "text"
     }
   }
 }
