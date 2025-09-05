@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_colors",
+  "info": {
+    "singularName": "brand-color",
+    "pluralName": "brand-colors",
+    "displayName": "brand_color"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::brand.brand",
+      "inversedBy": "brand_colors"
+    },
+    "type": {
+      "type": "string"
+    },
+    "hex": {
+      "type": "string"
+    },
+    "brightness": {
+      "type": "integer"
+    }
+  }
+}
