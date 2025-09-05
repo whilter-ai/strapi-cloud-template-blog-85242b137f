@@ -21,7 +21,7 @@
       "mappedBy": "brand"
     },
     "pitch_id": {
-      "type": "uid"
+      "type": "string"
     }
   }
 }

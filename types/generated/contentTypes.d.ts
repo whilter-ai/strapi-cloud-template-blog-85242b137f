@@ -426,7 +426,7 @@ export interface ApiBrandBrand extends Struct.CollectionTypeSchema {
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::brand.brand'> &
       Schema.Attribute.Private;
-    pitch_id: Schema.Attribute.UID;
+    pitch_id: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -455,7 +455,7 @@ export interface ApiIdeaIdea extends Struct.CollectionTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::idea.idea'> &
       Schema.Attribute.Private;
     personalisation_logic: Schema.Attribute.Text;
-    pitch_id: Schema.Attribute.UID;
+    pitch_id: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     selected: Schema.Attribute.Boolean;
     sequence: Schema.Attribute.Integer;

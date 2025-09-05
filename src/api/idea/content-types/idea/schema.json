@@ -32,11 +32,11 @@
     "sequence": {
       "type": "integer"
     },
-    "pitch_id": {
-      "type": "uid"
-    },
     "format": {
       "type": "text"
+    },
+    "pitch_id": {
+      "type": "string"
     }
   }
 }
